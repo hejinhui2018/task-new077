@@ -24,7 +24,7 @@ export default function PlanList({ quotes, prevQuotes, selectedPlanId, onSelect 
               onClick={() => onSelect(q.planId)}
             >
               <span className="plan-name">{q.planName}</span>
-              <span className="plan-tagline">{q.tagline}</span>
+              <span className="plan-tagline">{q.planTagline}</span>
               {q.status === 'ok' ? (
                 <span className="plan-price">
                   {fmtMoney(q.total)}
