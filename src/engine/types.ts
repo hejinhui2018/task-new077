@@ -37,6 +37,7 @@ export type QuoteStatus = 'ok' | 'incomplete' | 'unavailable'
 export interface PlanQuote {
   planId: string
   planName: string
+  tagline: string
   status: QuoteStatus
   /** 缺失的输入项名称（status = incomplete 时非空） */
   missing: string[]
